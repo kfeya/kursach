@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+section#product .container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #fafafa;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#product .form {
+    width: 100%;
+    max-width: 70%;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    margin: auto;
+}
+
+section#product .contact-us-form.hiddend {
+    padding: 0;
+}
+
+section#product .contact-form {
+    background-color: #0081aa;
+    position: relative;
+    width: 100%;
+    /* Set initial width */
+    height: 100%;
+    /* Set initial height */
+    transition: all 0.7s;
+}
+
+section#product .contact-form.hiddend {
+    width: 0%;
+    /* Set width to 0 when hiddend */
+    transition: all 0.7s;
+}
+
+section#product .circle {
+    border-radius: 50%;
+    background: linear-gradient(135deg, transparent 20%, #149279);
+    position: absolute;
+}
+
+section#product .circle.one {
+    width: 130px;
+    height: 130px;
+    top: 130px;
+    right: -40px;
+}
+
+section#product .circle.two {
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    right: 30px;
+}
+
+section#product form {
+    padding: 2.3rem 2.2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+section#product .title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+}
+
+section#product .input-container {
+    position: relative;
+    margin: 1rem 0;
+}
+
+section#product .input {
+    width: 100%;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+section#product .input.hiddend {
+    width: 0%;
+    /* Set width to 0 when hiddend */
+    transition: all 0.7s;
+}
+
+section#product .input-container label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: #fafafa;
+    font-size: 0.9rem;
+    font-weight: 400;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+section#product .btn {
+    padding: 0.6rem 1.3rem;
+    background-color: #fff;
+    border: 2px solid #fafafa;
+    font-size: 0.95rem;
+    color: #1abc9c;
+    line-height: 1;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+    width: 100%;
+}
+
+section#product .btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+section#product .contact-info {
+    padding: 2.3rem 2.2rem;
+    position: relative;
+}
+
+section#product ::placeholder {
+    color: #fff;
+}
+
+section#product .contact-info .title {
+    color: #1abc9c;
+}
+
+section#product .text {
+    color: #333;
+    margin: 1.5rem 0 2rem 0;
+}
+
+section#product .information {
+    display: flex;
+    color: #555;
+    margin: 0.7rem 0;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+section#product .information i {
+    color: #1abc9c;
+}
+
+section#product .icon {
+    width: 28px;
+    margin-right: 0.7rem;
+}
+
+section#product .contact-info.hiddend {
+    transition: all 0.7s;
+}
+
+section#product div#subscribe-title-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-weight: bold;
+}
+
+section#product h3.subscribe-title {
+    font-weight: bold;
+    color: #2e3192;
+    font-size: xx-large;
+    text-align: center;
+}
+
+@media (max-width: 850px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    section#product .contact-info:before {
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+    }
+
+    section#product .contact-form:before {
+        top: -13px;
+        left: initial;
+        right: 70px;
+    }
+
+    section#product .square {
+        transform: translate(140%, 43%);
+        height: 350px;
+    }
+
+    section#product .big-circle {
+        bottom: 75%;
+        transform: scale(0.9) translate(-40%, 30%);
+        right: 50%;
+    }
+
+    section#product .text {
+        margin: 1rem 0 1.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    section#product .container {
+        padding: 1.5rem;
+    }
+
+    section#product .contact-info:before {
+        display: none;
+    }
+
+    form,
+    .contact-info {
+        padding: 1.7rem 1.6rem;
+    }
+
+    section#product .text,
+    section#product .information p {
+        font-size: 0.8rem;
+    }
+
+    section#product .title {
+        font-size: 1.15rem;
+    }
+
+    section#product .icon {
+        width: 23px;
+    }
+
+    section#product .input {
+        padding: 0.45rem 1.2rem;
+    }
+
+    section#product .btn {
+        padding: 0.45rem 1.2rem;
+    }
+}
+
+section#product .services-item {
+    margin-top: 5%;
+    background: #0081aa;
+    border-radius: 999px;
+    box-shadow: #0081aa 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+        NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+        EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto,
+        "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+section#product .services-item-selected {
+    background: #2e3192;
+    box-shadow: #2e3192 0 10px 20px -10px;
+}
+
+/* CSS */
+section#product .button-29 {
+    margin-top: 3%;
+
+    /* margin-left: 143% !important;  */
+  
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0,
+            #5adaff 0,
+            #2e3192 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px,
+        rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 25px;
+}
+
+section#product .button-29:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+
+
+section#product .button-29:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+section#product .button-29:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+section#product #subscribe-title-mobile h3 {
+    display: none;
+}
+
+@media (max-width: 1450px) {
+    section#product .form {
+        max-width: 95%;
+    }
+
+    section#product .contact-info {
+        padding: 1.5rem 1.2rem;
+    }
+
+    section#product .input {
+        padding: 0.5rem 1rem;
+    }
+
+    section#product .btn {
+        padding: 0.5rem 1rem;
+    }
+
+    section#product .text,
+    section#product .information p {
+        font-size: 0.9rem;
+    }
+
+    section#product .title {
+        font-size: 1.25rem;
+    }
+
+    section#product .icon {
+        width: 25px;
+    }
+
+    section#product .services-item {
+        font-size: 14px;
+    }
+
+    section#product h3.subscribe-title {
+        font-size: large;
+    }
+}
+
+@media (max-width: 600px) {
+    section#product {
+        padding: 40px 20px;
+    }
+
+    section#product div#subscribe-title-block {
+        display: none;
+    }
+
+    section#product .form {
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+    }
+
+    section#product .contact-form.hiddend {
+        display: none;
+    }
+
+    section#product #subscribe-title-mobile h3 {
+        display: inline;
+        padding-bottom: 10px;
+        color: #2e3192;
+        font-size: xx-large;
+    }
+
+    section#product #subscribe-title-mobile {
+        padding-bottom: 20px;
+    }
+}

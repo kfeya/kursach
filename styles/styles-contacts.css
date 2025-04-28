@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+#social {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 10px;
+}
+
+section#social .socials-block {
+	width: 100%;
+	text-align: center;
+}
+
+section#social h2 {
+	color: #505050;
+	font-size: 70px;
+	font-family: 'Poiret One';
+	text-align: center;
+	margin: auto;
+}
+
+#social .icon-btn {
+	width: 80px;
+	height: 80px;
+	border: 0;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 40px;
+	border-radius: 45px;
+	justify-content: center;
+	align-items: center;
+	margin: 15px;
+}
+
+#social .icon-btn a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+
+section#social h4 {
+	font-size: x-large;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+section#social .telegram {
+	color: #3B5998;
+}
+
+section#social .envelope {
+	color: #DB5A3C;
+}
+
+section#social .instagram {
+	color: #5C3D2E;
+}
+
+section#social .phone {
+	color: #5C3D2E;
+}
+
+section#social .icon-btn:hover {
+	transform: scale(1.10);
+	color: #FFFFFF;
+}
+
+section#social .telegram:hover {
+	background-color: #3B5998;
+}
+
+section#social .envelope:hover {
+	background-color: #DB5A3C;
+}
+
+section#social .instagram:hover {
+	background-color: #5C3D2E;
+}
+
+section#social .phone:hover {
+	background-color: #5C3D2E;
+}
+
+#contact-number {
+	text-decoration: none;
+}
+
+@media(max-width: 600px) {
+	#social {
+		padding: 10px;
+		padding-bottom: 30px;
+	}
+
+	#social .icon-btn {
+		margin: 5px;
+	}
+}

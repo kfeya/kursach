@@ -1,0 +1,89 @@
+#hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    background-color: black;
+}
+
+.svg-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    scale: 0.7;
+    height: auto;
+}
+
+.hero-svg {
+    min-width: 300px;
+    overflow: auto;
+    transition: transform 0.3s ease;
+}
+
+.hero-content {
+    max-width: 80vh;
+    text-align: center;
+}
+
+h1.animate-text {
+    font-family: "Exo 2";
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    animation: fadeIn 2s ease-in-out;
+    color: #fff;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    line-height: 0.7;
+}
+
+p.animate-text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out 1s;
+    color: black;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #032030;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    animation: fadeIn 2s ease-in-out 2s;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2e3192;
+}
+
+
+@media (max-width: 600px) {
+    #hero {
+        padding-top: 60px;
+    }
+
+    .cta-button {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .hero-svg {
+        min-width: auto;
+        width: 100%;
+        height: auto;
+        transform: scale(1.5);
+        margin: 10%;
+    }
+
+    h1.animate-text {
+        font-size: 2rem;
+    }
+
+}
