@@ -180,13 +180,15 @@ section#features p::-webkit-scrollbar-thumb {
     }
 
     section#features .flip-card-back {
-        display: none;
+        display: flex;
     }
 
-    section#features .flip-card:hover .flip-card-inner {
+    /* section#features .flip-card:hover .flip-card-inner {
         transform: none;
+    } */
+    section#features .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
     }
-
     section#features .features-container {
         gap: 1rem;
     }
