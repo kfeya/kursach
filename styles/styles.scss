@@ -13,7 +13,7 @@ body {
     background-color: #f9f9f9;
 }
 
-// Анимация
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -26,12 +26,12 @@ body {
     }
 }
 
-// Секции
+
 section {
     scroll-margin-top: 70px;
 }
 
-// Контейнеры для скролла
+
 .scroll-container {
     overflow-x: auto;
     white-space: nowrap;
@@ -44,7 +44,7 @@ section {
     }
 }
 
-// Стили для секции продукта
+
 #product {
     padding: 60px 20px;
     background: #f9f9f9;

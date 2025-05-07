@@ -1,4 +1,4 @@
-/* Основные стили секции */
+
 #reviews {
     padding: 80px 20px;
     background-color: #f9f9f9;
@@ -19,7 +19,7 @@
     color: #333;
 }
 
-/* Контейнер для бесконечной прокрутки */
+
 .reviews-slider {
     display: flex;
     gap: 30px;
@@ -27,7 +27,7 @@
     width: max-content;
 }
 
-/* Фиксированный размер для всех отзывов */
+
 .review-box {
     width: 350px;
     min-height: 300px;
@@ -40,7 +40,7 @@
     flex-shrink: 0;
 }
 
-/* Стили содержимого отзыва */
+
 .review-box p {
     flex: 1;
     margin: 0 0 15px 0;
@@ -65,7 +65,7 @@
     margin-top: auto;
 }
 
-/* Анимация прокрутки */
+
 @keyframes scrollReviews {
     0% {
         transform: translateX(0);
@@ -75,7 +75,7 @@
     }
 }
 
-/* Адаптация для мобильных */
+
 @media (max-width: 768px) {
     .reviews-container h2 {
         font-size: 2rem;
@@ -83,14 +83,14 @@
     
     .review-box {
         width: 300px;
-        min-height: auto; /* Автоматическая высота */
-        height: auto; /* Полная высота по содержимому */
+        min-height: auto; 
+        height: auto; 
     }
     
     .review-box p {
-        -webkit-line-clamp: unset; /* Убираем ограничение строк */
-        display: block; /* Возвращаем стандартное отображение */
-        overflow: visible; /* Показываем весь текст */
+        -webkit-line-clamp: unset; 
+        display: block; 
+        overflow: visible; 
     }
     
     @keyframes scrollReviews {
